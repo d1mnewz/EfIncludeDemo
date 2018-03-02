@@ -29,7 +29,6 @@ namespace EfIncludeDemo.Data.User.Subscriptions
 
 		public void ExpiresAt(DateTime expirationDate)
 		{
-
 			ExpirationDate = expirationDate;
 		}
 	}
@@ -46,6 +45,4 @@ namespace EfIncludeDemo.Data.User.Subscriptions
 			base.Initialize(builder, cfg);
 		}
 	}
-
-
 }

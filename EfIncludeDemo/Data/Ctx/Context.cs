@@ -14,7 +14,7 @@ namespace EfIncludeDemo.Data.Ctx
 		protected virtual List<IEntityConfiguration> EntityConfigurations { get; } = new List<IEntityConfiguration>();
 		protected virtual string Schema => null;
 
-		protected Context(DbContextOptions options) : base(options)
+		protected Context()
 		{
 		}
 

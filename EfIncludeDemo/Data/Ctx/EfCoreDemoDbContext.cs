@@ -23,9 +23,10 @@ namespace EfIncludeDemo.Data.Ctx
 			new ChildEntityConfiguration(),
 		};
 
-		public EfCoreDemoDbContext(DbContextOptions<EfCoreDemoDbContext> options) : base(options)
+		protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
 		{
-			
+			optionsBuilder.UseSqlServer(
+				"Server=.;Database=EfIncludeDemo;user id=sa;password=sa_password;Encrypt=True;TrustServerCertificate=True;Connection Timeout=60;PersistSecurityInfo=true");
 		}
 	}
 }
